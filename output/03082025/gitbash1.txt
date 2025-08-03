@@ -1,0 +1,93 @@
+
+
+Nikolai@DESKTOP-NAGMAIT MINGW64 ~/projects/sem4
+$ git init
+Initialized empty Git repository in C:/Users/Nikolai/projects/sem4/.git/
+
+Nikolai@DESKTOP-NAGMAIT MINGW64 ~/projects/sem4 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+        docs/
+        jupiter/
+        requirements.txt
+        src/
+        triton_instructions/
+        venv/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Nikolai@DESKTOP-NAGMAIT MINGW64 ~/projects/sem4 (master)
+$ git add src/
+
+Nikolai@DESKTOP-NAGMAIT MINGW64 ~/projects/sem4 (master)
+$ git add jupiter/
+
+Nikolai@DESKTOP-NAGMAIT MINGW64 ~/projects/sem4 (master)
+$ git commit -m "Первый коммит"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Nikolai@DESKTOP-NAGMAIT.(none)')
+
+Nikolai@DESKTOP-NAGMAIT MINGW64 ~/projects/sem4 (master)
+$ git config --global user.email "n-popov81@yandex.ru"
+
+Nikolai@DESKTOP-NAGMAIT MINGW64 ~/projects/sem4 (master)
+$ git config --global user.name "Nikolai"
+
+Nikolai@DESKTOP-NAGMAIT MINGW64 ~/projects/sem4 (master)
+$ git commit -m "Первый коммит"
+[master (root-commit) 4370069] Первый коммит
+ 4 files changed, 3633 insertions(+)
+ create mode 100644 jupiter/Sem_4_p1_production_serving (1).ipynb
+ create mode 100644 src/api_metrics_test.py
+ create mode 100644 src/fast_api_llm.py
+ create mode 100644 src/llm_inference_metrics.py
+
+Nikolai@DESKTOP-NAGMAIT MINGW64 ~/projects/sem4 (master)
+$ git remote add origin https://github.com/nikolaitpopov/ai-agents
+
+Nikolai@DESKTOP-NAGMAIT MINGW64 ~/projects/sem4 (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/nikolaitpopov/ai-agents'
+
+Nikolai@DESKTOP-NAGMAIT MINGW64 ~/projects/sem4 (master)
+$ git push -u origin master
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/nikolaitpopov/ai-agents/'
+
+Nikolai@DESKTOP-NAGMAIT MINGW64 ~/projects/sem4 (master)
+$ git push -u origin master
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/nikolaitpopov/ai-agents/'
+
+Nikolai@DESKTOP-NAGMAIT MINGW64 ~/projects/sem4 (master)
+$ git push -u origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 22 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 41.00 KiB | 8.20 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/nikolaitpopov/ai-agents
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Nikolai@DESKTOP-NAGMAIT MINGW64 ~/projects/sem4 (master)
+$
